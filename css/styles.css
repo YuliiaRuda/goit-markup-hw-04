@@ -153,7 +153,7 @@ img {
   background-size: cover;
   text-align: center;
   padding: 188px 0;
-  min-width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -175,10 +175,16 @@ img {
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.04em;
-  background-color: var(--blue-color);
+  background-color: var(--brand-color);
   padding: 16px 32px;
   border-radius: 4px;
   border: 0;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* about  */
@@ -500,7 +506,8 @@ img {
   display: block;
 }
 
-.portfolio-conteiner-link.link:hover {
+.portfolio-conteiner-link.link:hover,
+.portfolio-conteiner-link.link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
